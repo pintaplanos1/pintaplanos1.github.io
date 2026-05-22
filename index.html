@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pinta Planos — Dibuja los planos de tu reforma</title>
+<meta name="description" content="Dibuja los planos de tu reforma sin saber AutoCAD. App gratuita para Windows.">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Nunito:wght@300;400;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--azul:#1e4d7b;--azul-med:#2d6fba;--azul-light:#daeaf8;--crema:#faf7f2;--crema-dark:#f0ebe1;--gris:#5f6b7a;--negro:#1a2330;--linea:#ddd5c8;--accent:#d4621a;--verde:#2d7a4f}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito',sans-serif;background:var(--crema);color:var(--negro);overflow-x:hidden}
+
+header{background:white;border-bottom:1px solid var(--linea);padding:0 40px;height:60px;display:flex;align-items:center;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(30,77,123,.06);gap:16px}
+.logo-wrap{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-icon{width:32px;height:32px;border-radius:6px;overflow:hidden;flex-shrink:0}
+.logo-icon img{width:100%;height:100%;object-fit:cover}
+.logo{font-family:'Montserrat',serif;font-size:21px;font-weight:600;color:var(--azul)}
+.logo span{color:var(--accent)}
+nav{margin-left:auto;display:flex;align-items:center;gap:20px}
+nav a{font-size:14px;font-weight:600;color:var(--gris);text-decoration:none;transition:color .2s}
+nav a:hover{color:var(--azul)}
+.nav-cta{background:var(--azul)!important;color:white!important;padding:8px 20px;border-radius:20px}
+.lang-sep{width:1px;height:20px;background:var(--linea)}
+.lang-toggle-nav{display:flex;border:1px solid var(--linea);border-radius:16px;overflow:hidden;background:var(--crema)}
+.lang-btn{padding:4px 12px;background:transparent;color:var(--gris);border:none;cursor:pointer;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.08em;transition:all .2s}
+.lang-btn.active{background:var(--azul);color:white;border-radius:16px}
+
+.hero{max-width:1160px;margin:0 auto;padding:72px 40px 60px;display:grid;grid-template-columns:1fr 1.8fr;gap:56px;align-items:start;min-height:88vh}
+.hero-text{animation:fadeUp .65s ease both}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--azul-light);color:var(--azul);border-radius:20px;padding:5px 14px;font-size:12px;font-weight:700;letter-spacing:.04em;margin-bottom:24px;font-family:'DM Mono',monospace}
+.hero-badge::before{content:'●';font-size:8px}
+h1{font-family:'Montserrat',serif;font-size:clamp(32px,3.8vw,50px);line-height:1.13;color:var(--azul);margin-bottom:20px;font-weight:600;letter-spacing:-.02em}
+h1 em{font-style:italic;color:var(--accent);font-weight:400}
+.hero-sub{font-size:16px;line-height:1.75;color:var(--gris);max-width:420px;margin-bottom:34px;font-weight:300}
+.hero-actions{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.btn-primary{background:var(--azul);color:white;padding:13px 28px;border-radius:24px;font-weight:700;font-size:15px;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all .2s;box-shadow:0 4px 20px rgba(30,77,123,.25)}
+.btn-primary:hover{background:var(--azul-med);transform:translateY(-2px);box-shadow:0 8px 28px rgba(30,77,123,.3)}
+.btn-ghost{color:var(--azul);font-size:14px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:5px;opacity:.8;transition:opacity .2s}
+.btn-ghost:hover{opacity:1}
+.btn-descarga{font-size:16px;padding:15px 34px;}
+.hero-meta{margin-top:20px;display:flex;gap:18px;flex-wrap:wrap}
+.hero-meta-item{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--gris)}
+.hero-meta-item::before{content:'✓';color:var(--verde);font-weight:700}
+
+.hero-visual{animation:fadeUp .65s .12s ease both}
+.app-screenshot{border-radius:10px;overflow:visible;box-shadow:0 24px 64px rgba(30,77,123,.18),0 4px 16px rgba(0,0,0,.08);border:1px solid var(--linea)}
+.app-screenshot img{width:100%;display:block;max-height:75vh;object-fit:contain;background:white}
+
+.strip{background:var(--azul);padding:28px 40px;display:flex;justify-content:center;gap:64px;flex-wrap:wrap}
+.strip-item{text-align:center}
+.strip-num{font-family:'Montserrat',serif;font-size:28px;color:white;display:block;font-weight:300}
+.strip-label{font-size:12px;color:var(--azul-light);font-weight:300;display:block;margin-top:2px}
+
+.who-section{max-width:1100px;margin:0 auto;padding:80px 40px;display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.eyebrow{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+h2{font-family:'Montserrat',serif;font-size:clamp(24px,2.8vw,36px);color:var(--azul);margin-bottom:40px;font-weight:600;letter-spacing:-.02em;line-height:1.2;max-width:540px}
+.who-cards{display:flex;flex-direction:column;gap:14px}
+.who-card{display:flex;gap:16px;align-items:flex-start;padding:18px 20px;background:white;border:1px solid var(--linea);border-radius:10px;transition:box-shadow .2s}
+.who-card:hover{box-shadow:0 4px 16px rgba(30,77,123,.08)}
+.who-emoji{font-size:22px;flex-shrink:0;margin-top:1px}
+.who-title{font-weight:700;font-size:14px;color:var(--azul);margin-bottom:3px}
+.who-desc{font-size:13px;color:var(--gris);line-height:1.6;font-weight:300}
+.origin-card{background:var(--azul);border-radius:12px;padding:32px 30px}
+.origin-card .eyebrow{color:var(--azul-light);margin-bottom:16px}
+.origin-quote{font-family:'Montserrat',serif;font-style:italic;font-size:19px;line-height:1.55;color:white;font-weight:400;margin-bottom:18px}
+.origin-author{font-size:13px;color:var(--azul-light);font-weight:300}
+
+.features-section{background:var(--crema-dark);border-top:1px solid var(--linea);border-bottom:1px solid var(--linea);padding:80px 40px}
+.features-inner{max-width:1100px;margin:0 auto}
+.features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.feat{background:white;border-radius:10px;padding:24px 20px;border:1px solid var(--linea);display:flex;gap:14px;align-items:flex-start}
+.feat-icon-wrap{flex-shrink:0;width:40px;height:40px;background:var(--azul-light);border-radius:8px;display:flex;align-items:center;justify-content:center}
+.feat-icon-wrap svg{width:22px;height:22px}
+.feat-title{font-weight:700;font-size:14px;color:var(--azul);margin-bottom:5px}
+.feat-desc{font-size:12px;color:var(--gris);line-height:1.6;font-weight:300}
+
+.cta-section{text-align:center;padding:90px 40px;background:var(--crema)}
+.cta-section h2{margin:0 auto 12px;text-align:center;max-width:560px}
+.cta-section p{color:var(--gris);font-size:15px;margin-bottom:32px;font-weight:300}
+.cta-note{margin-top:14px;font-family:'DM Mono',monospace;font-size:11px;color:var(--gris);letter-spacing:.06em}
+
+footer{background:#101e30;color:#6a8aaa;padding:32px 40px;display:flex;justify-content:space-between;align-items:center;font-size:13px;flex-wrap:wrap;gap:16px}
+.footer-logo{display:flex;align-items:center;gap:10px}
+.footer-logo-icon{width:28px;height:28px;border-radius:5px;overflow:hidden}
+.footer-logo-icon img{width:100%;height:100%;object-fit:cover}
+.footer-logo-text{font-family:'Montserrat',serif;font-size:17px;color:white;font-weight:600}
+.footer-logo-text span{color:var(--accent)}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:900px){.hero{grid-template-columns:1fr;padding:48px 24px;min-height:auto}.features-grid{grid-template-columns:1fr 1fr}.who-section{grid-template-columns:1fr;gap:40px}header{padding:0 20px}nav a:not(.nav-cta){display:none}.strip{gap:32px}footer{justify-content:center;text-align:center}}
+@media(max-width:600px){.features-grid{grid-template-columns:1fr}}
+[data-lang="en"]{display:none}
+body.lang-en [data-lang="es"]{display:none}
+body.lang-en [data-lang="en"]{display:revert}
+body.lang-en .feat[data-lang="en"]{display:flex}
+body.lang-en .who-card[data-lang="en"]{display:flex}
+</style>
+<meta name="google-site-verification" content="SnzyMWYYHW2IMAd6AKsOxSJyBxLUIRZMwGvkFDIgoj4" />
+</head>
+<body>
+
+<header>
+  <a href="#" class="logo-wrap">
+    <div class="logo-icon"><img src="icono.png" alt="PintaPlanos"></div>
+     <span class="logo">Pinta<span>Planos</span></span>
+  </a>
+  <nav>
+    <a href="#sobre" data-lang="es">Sobre Pintaplanos</a>
+    <a href="#sobre" data-lang="en">About Pintaplanos</a>
+    <a href="#descarga" class="nav-cta" data-lang="es">Descargar</a>
+    <a href="#descarga" class="nav-cta" data-lang="en">Download</a>
+    <div class="lang-sep"></div>
+    <div class="lang-toggle-nav">
+      <button class="lang-btn active" onclick="setLang('es')">ES</button>
+      <button class="lang-btn" onclick="setLang('en')">EN</button>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <div class="hero-badge" data-lang="es">Gratis · Windows · Sin registro</div>
+    <div class="hero-badge" data-lang="en">Free · Windows · No sign-up</div>
+    <h1 data-lang="es">Los planos de tu reforma, <em>sin aprender AutoCAD</em></h1>
+    <h1 data-lang="en">Your renovation drawings, <em>without learning AutoCAD</em></h1>
+    <p class="hero-sub" data-lang="es">Pinta Planos es una app de escritorio para dibujar los planos de tu casa: distribución de espacios, paredes, cotas y exportación en PDF. Sencilla desde el primer día.</p>
+    <p class="hero-sub" data-lang="en">Pinta Planos is a desktop app for drawing your home's floor plans: room layouts, walls, dimensions, and PDF export. Easy from day one.</p>
+    <div class="hero-actions">
+      <a href="#descarga" class="btn-primary" data-lang="es">⬇ Descargar gratis</a>
+      <a href="#descarga" class="btn-primary" data-lang="en">⬇ Download free</a>
+      <a href="#funciones" class="btn-ghost" data-lang="es">Ver funciones →</a>
+      <a href="#funciones" class="btn-ghost" data-lang="en">See features →</a>
+    </div>
+    <div class="hero-meta">
+      <span class="hero-meta-item" data-lang="es">Sin suscripción</span>
+      <span class="hero-meta-item" data-lang="en">No subscription</span>
+      <span class="hero-meta-item" data-lang="es">Funciona sin internet</span>
+      <span class="hero-meta-item" data-lang="en">Works offline</span>
+      <span class="hero-meta-item" data-lang="es">Tus archivos en tu PC</span>
+      <span class="hero-meta-item" data-lang="en">Your files on your PC</span>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="app-screenshot" style="overflow:visible;">
+      <img src="Imagen_insignia.jpg" alt="PintaPlanos — interfaz real de la aplicación" onclick="document.getElementById('lb').style.display='flex'" style="cursor:zoom-in;">
+    </div>
+    <div id="lb" onclick="this.style.display='none'" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:999;align-items:center;justify-content:center;cursor:zoom-out;padding:20px;">
+      <img src="Imagen_insignia.jpg" style="max-width:90vw;max-height:90vh;object-fit:contain;border-radius:8px;box-shadow:0 8px 40px rgba(0,0,0,.5);">
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="strip-item"><span class="strip-num">A4 → A0</span><span class="strip-label" data-lang="es">Formatos de exportación</span><span class="strip-label" data-lang="en">Export formats</span></div>
+  <div class="strip-item"><span class="strip-num">1:50 – 1:500</span><span class="strip-label" data-lang="es">Escalas soportadas</span><span class="strip-label" data-lang="en">Supported scales</span></div>
+  <div class="strip-item"><span class="strip-num">PDF</span><span class="strip-label" data-lang="es">Plano + mediciones</span><span class="strip-label" data-lang="en">Drawing + take-off</span></div>
+  <div class="strip-item"><span class="strip-num">0 €</span><span class="strip-label" data-lang="es">Para siempre</span><span class="strip-label" data-lang="en">Forever free</span></div>
+</div>
+
+<section class="features-section" id="funciones">
+  <div class="features-inner">
+    <div class="eyebrow" data-lang="es">Qué incluye</div>
+    <div class="eyebrow" data-lang="en">What's included</div>
+    <h2 data-lang="es">Las herramientas que necesitas</h2>
+    <h2 data-lang="en">The tools you need</h2>
+    <div class="features-grid">
+
+      <div class="feat">
+        <div class="feat-icon-wrap">
+          <!-- Icono Pared: doble línea con relleno -->
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="9" width="20" height="6" fill="#daeaf8" stroke="#1e4d7b" stroke-width="1.5"/>
+            <line x1="2" y1="9" x2="22" y2="9" stroke="#222" stroke-width="2"/>
+            <line x1="2" y1="15" x2="22" y2="15" stroke="#222" stroke-width="2"/>
+          </svg>
+        </div>
+        <div>
+          <div class="feat-title" data-lang="es">Pared</div>
+          <div class="feat-title" data-lang="en">Wall</div>
+          <p class="feat-desc" data-lang="es">Dibuja paredes con espesor real (4–20 cm). Cada segmento es editable de forma independiente.</p>
+          <p class="feat-desc" data-lang="en">Draw walls with real thickness (4–20 cm). Each segment is independently editable.</p>
+        </div>
+      </div>
+
+      <div class="feat">
+        <div class="feat-icon-wrap">
+          <!-- Icono Espacio: polígono con m² -->
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="12,3 4,9 7,20 17,20 20,9" fill="rgba(64,128,64,0.15)" stroke="#408040" stroke-width="1.5" stroke-dasharray="3,2"/>
+            <text x="12" y="15" font-family="Arial" font-size="6" fill="#408040" text-anchor="middle" font-weight="bold">m²</text>
+          </svg>
+        </div>
+        <div>
+          <div class="feat-title" data-lang="es">Espacio</div>
+          <div class="feat-title" data-lang="en">Space</div>
+          <p class="feat-desc" data-lang="es">Define habitaciones y obtén el área en m² de forma automática.</p>
+          <p class="feat-desc" data-lang="en">Define rooms and get their area in m² automatically.</p>
+        </div>
+      </div>
+
+      <div class="feat">
+        <div class="feat-icon-wrap">
+          <!-- Icono Acotar -->
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="3" y1="17" x2="21" y2="17" stroke="#3060b0" stroke-width="1.6"/>
+            <line x1="3" y1="13" x2="3" y2="21" stroke="#3060b0" stroke-width="1.2"/>
+            <line x1="21" y1="13" x2="21" y2="21" stroke="#3060b0" stroke-width="1.2"/>
+            <polygon points="3,17 7,15 7,19" fill="#3060b0"/>
+            <polygon points="21,17 17,15 17,19" fill="#3060b0"/>
+            <text x="12" y="11" font-family="Arial" font-size="5.5" fill="#3060b0" text-anchor="middle" font-weight="bold">2.40m</text>
+          </svg>
+        </div>
+        <div>
+          <div class="feat-title" data-lang="es">Acotar</div>
+          <div class="feat-title" data-lang="en">Dimension</div>
+          <p class="feat-desc" data-lang="es">Clic en dos puntos y la cota aparece con la distancia real en metros.</p>
+          <p class="feat-desc" data-lang="en">Click two points and the dimension appears with the real distance in metres.</p>
+        </div>
+      </div>
+
+      <div class="feat">
+        <div class="feat-icon-wrap">
+          <!-- Icono Tubería: línea azul con círculos -->
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="5" y1="12" x2="19" y2="12" stroke="#2080d0" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="5" cy="12" r="3" stroke="#2080d0" stroke-width="1.6" fill="none"/>
+            <circle cx="19" cy="12" r="3" stroke="#2080d0" stroke-width="1.6" fill="none"/>
+          </svg>
+        </div>
+        <div>
+          <div class="feat-title" data-lang="es">Tubería</div>
+          <div class="feat-title" data-lang="en">Pipe</div>
+          <p class="feat-desc" data-lang="es">Diámetros normalizados, colores por circuito (frío/caliente/retorno) y línea continua o discontinua.</p>
+          <p class="feat-desc" data-lang="en">Standard diameters, circuit colours (cold/hot/return) and solid or dashed line.</p>
+        </div>
+      </div>
+
+      <div class="feat">
+        <div class="feat-icon-wrap">
+          <!-- Icono Objeto: rectángulo con texto -->
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="5" width="18" height="14" rx="1" fill="white" stroke="#666" stroke-width="1.4"/>
+            <line x1="6" y1="10" x2="18" y2="10" stroke="#aaa" stroke-width="0.9"/>
+            <line x1="6" y1="13" x2="18" y2="13" stroke="#aaa" stroke-width="0.9"/>
+            <line x1="6" y1="16" x2="14" y2="16" stroke="#aaa" stroke-width="0.9"/>
+          </svg>
+        </div>
+        <div>
+          <div class="feat-title" data-lang="es">Objeto</div>
+          <div class="feat-title" data-lang="en">Object</div>
+          <p class="feat-desc" data-lang="es">Coloca muebles o electrodomésticos a escala real. Girables y con referencia personalizable.</p>
+          <p class="feat-desc" data-lang="en">Place furniture or appliances at real scale. Rotatable with a customisable label.</p>
+        </div>
+      </div>
+
+      <div class="feat">
+        <div class="feat-icon-wrap">
+          <!-- Icono Símbolos: rayo + grifo -->
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="8" cy="9" r="4.5" stroke="#222" stroke-width="1.3" fill="none"/>
+            <line x1="5.5" y1="6.5" x2="10.5" y2="11.5" stroke="#222" stroke-width="1.3"/>
+            <line x1="10.5" y1="6.5" x2="5.5" y2="11.5" stroke="#222" stroke-width="1.3"/>
+            <polygon points="16,4 14,14 17,10 15,20" fill="#2080d0" stroke="#2080d0" stroke-width="0.5" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div>
+          <div class="feat-title" data-lang="es">Simbología</div>
+          <div class="feat-title" data-lang="en">Symbols</div>
+          <p class="feat-desc" data-lang="es">Electricidad y fontanería: enchufes, interruptores, grifos, desagües, llaves de paso y más.</p>
+          <p class="feat-desc" data-lang="en">Electrical and plumbing: sockets, switches, taps, drains, stopcocks and more.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="sobre" style="max-width:680px;margin:0 auto;padding:72px 40px;text-align:center;">
+  <div class="eyebrow" data-lang="es">Sobre Pinta Planos</div>
+  <div class="eyebrow" data-lang="en">About Pinta Planos</div>
+  <p style="font-size:17px;line-height:1.75;color:var(--gris);margin:20px 0 10px;" data-lang="es">Pinta Planos nace desde el amor por la experiencia de usuario, la ergonomía y la sencillez. Una herramienta a medio camino entre la simplicidad de Paint y la potencia de AutoCAD.</p>
+  <p style="font-size:17px;line-height:1.75;color:var(--gris);margin:20px 0 10px;" data-lang="en">Pinta Planos was born from a love of user experience, ergonomics and simplicity. A tool halfway between the ease of Paint and the power of AutoCAD.</p>
+  <p style="margin-top:16px;font-size:14px;color:var(--gris);" data-lang="es">Contacto: <a href="mailto:pintaplanos1@gmail.com" style="color:var(--azul);font-weight:600;">pintaplanos1@gmail.com</a></p>
+  <p style="margin-top:16px;font-size:14px;color:var(--gris);" data-lang="en">Contact: <a href="mailto:pintaplanos1@gmail.com" style="color:var(--azul);font-weight:600;">pintaplanos1@gmail.com</a></p>
+</section>
+
+<section class="cta-section" id="descarga">
+  <h2 data-lang="es">Descárgalo y empieza hoy</h2>
+  <h2 data-lang="en">Download and start today</h2>
+  <p data-lang="es">Gratis para Windows 10 y 11. Sin cuenta ni suscripción.</p>
+  <p data-lang="en">Free for Windows 10 and 11. No account or subscription needed.</p>
+  <a href="https://github.com/pintaplanos1/Pintaplanos/releases/download/v1.2/PintaPlanos.exe" class="btn-primary btn-descarga" data-lang="es" >⬇ Descargar para Windows</a>
+  <a href="https://github.com/pintaplanos1/Pintaplanos/releases/download/v1.2/PintaPlanos.exe" class="btn-primary btn-descarga" data-lang="en" >⬇ Download for Windows</a>
+  <p class="cta-note" data-lang="es">Versión beta · Archivo .exe · ~20 MB</p>
+  <p class="cta-note" data-lang="en">Beta version · .exe file · ~20 MB</p>
+</section>
+
+<footer>
+  <div class="footer-logo">
+   <div class="footer-logo-icon"><img src="icono.png" alt="PintaPlanos"></div>
+    <span class="footer-logo-text">Pinta<span>Planos</span></span>
+  </div>
+  <div>pintaplanos.es</div>
+  <section style="max-width:700px;margin:2rem auto;padding:1rem 2rem;font-size:0.95rem;color:#666;text-align:center;">
+  <p>¿Buscas un <strong>paint vectorial para planos</strong>? Pinta Planos es la alternativa sencilla para dibujar los planos de tu reforma en Windows, gratis y sin registro. Sin AutoCAD, sin suscripción.</p>
+  <p>Un <strong>programa para dibujar planos gratis</strong> pensado para reformas, instalaciones y distribuciones de espacios. Exporta en PDF y guarda tus archivos en tu propio PC.</p>
+</section>
+</footer>
+
+<script>
+function setLang(l){document.body.classList.toggle('lang-en',l==='en');document.querySelectorAll('.lang-btn').forEach((b,i)=>b.classList.toggle('active',(i===0&&l==='es')||(i===1&&l==='en')))}
+if(navigator.language&&navigator.language.toLowerCase().startsWith('en'))setLang('en');
+</script>
+</body>
+</html>
