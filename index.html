@@ -83,6 +83,14 @@ h2{font-family:'Montserrat',serif;font-size:clamp(24px,2.8vw,36px);color:var(--a
 .cta-section h2{margin:0 auto 12px;text-align:center;max-width:560px}
 .cta-section p{color:var(--gris);font-size:15px;margin-bottom:32px;font-weight:300}
 .cta-note{margin-top:14px;font-family:'DM Mono',monospace;font-size:11px;color:var(--gris);letter-spacing:.06em}
+.changelog-wrap{margin-top:10px}
+.changelog-wrap summary{display:inline-flex;align-items:center;gap:6px;font-family:'DM Mono',monospace;font-size:11px;color:var(--azul-med);letter-spacing:.06em;cursor:pointer;list-style:none;user-select:none;opacity:.8;transition:opacity .2s}
+.changelog-wrap summary:hover{opacity:1}
+.changelog-wrap summary::after{content:'▾';font-size:10px;transition:transform .2s}
+.changelog-wrap[open] summary::after{transform:rotate(-180deg)}
+.changelog-list{margin-top:10px;display:inline-block;text-align:left;background:white;border:1px solid var(--linea);border-radius:8px;padding:14px 18px;font-size:12px;color:var(--gris);line-height:1.9}
+.changelog-list li{list-style:none;padding-left:0}
+.changelog-list li::before{content:'·  ';color:var(--accent);font-weight:700}
 
 footer{background:#101e30;color:#6a8aaa;padding:32px 40px;display:flex;justify-content:space-between;align-items:center;font-size:13px;flex-wrap:wrap;gap:16px}
 .footer-logo{display:flex;align-items:center;gap:10px}
@@ -128,8 +136,8 @@ body.lang-en .who-card[data-lang="en"]{display:flex}
     <div class="hero-badge" data-lang="en">Free · Windows · No sign-up</div>
     <h1 data-lang="es">Los planos de tu reforma, <em>sin aprender AutoCAD</em></h1>
     <h1 data-lang="en">Your renovation drawings, <em>without learning AutoCAD</em></h1>
-    <p class="hero-sub" data-lang="es">Pinta Planos es una app de escritorio para dibujar los planos de tu casa: distribución de espacios, paredes, cotas y exportación en PDF. Sencilla desde el primer día.</p>
-    <p class="hero-sub" data-lang="en">Pinta Planos is a desktop app for drawing your home's floor plans: room layouts, walls, dimensions, and PDF export. Easy from day one.</p>
+    <p class="hero-sub" data-lang="es">Pinta Planos es una app sencilla de escritorio para dibujar los planos de tu casa: distribución de espacios, paredes, cotas y exportación en PDF.</p>
+    <p class="hero-sub" data-lang="en">Pinta Planos is a easy desktop app for drawing your home's floor plans: room layouts, walls, dimensions, and PDF export.</p>
     <div class="hero-actions">
       <a href="#descarga" class="btn-primary" data-lang="es">⬇ Descargar gratis</a>
       <a href="#descarga" class="btn-primary" data-lang="en">⬇ Download free</a>
@@ -294,10 +302,38 @@ body.lang-en .who-card[data-lang="en"]{display:flex}
   <h2 data-lang="en">Download and start today</h2>
   <p data-lang="es">Gratis para Windows 10 y 11. Sin cuenta ni suscripción.</p>
   <p data-lang="en">Free for Windows 10 and 11. No account or subscription needed.</p>
-  <a href="https://github.com/pintaplanos1/Pintaplanos/releases/download/v1.3/PintaPlanos.exe" class="btn-primary btn-descarga" data-lang="es" >⬇ Descargar para Windows</a>
-  <a href="https://github.com/pintaplanos1/Pintaplanos/releases/download/v1.3/PintaPlanos.exe" class="btn-primary btn-descarga" data-lang="en" >⬇ Download for Windows</a>
-  <p class="cta-note" data-lang="es">Versión beta · Archivo .exe · ~20 MB</p>
-  <p class="cta-note" data-lang="en">Beta version · .exe file · ~20 MB</p>
+  <a href="https://github.com/pintaplanos1/Pintaplanos/releases/download/v1.4/PintaPlanos.exe" class="btn-primary btn-descarga" data-lang="es" >⬇ Descargar para Windows</a>
+  <a href="https://github.com/pintaplanos1/Pintaplanos/releases/download/v1.4/PintaPlanos.exe" class="btn-primary btn-descarga" data-lang="en" >⬇ Download for Windows</a>
+  <p class="cta-note" data-lang="es">Versión v1.4 · Archivo .exe · ~60 MB</p>
+  <p class="cta-note" data-lang="en">Version v1.4 · .exe file · ~60 MB</p>
+
+  <details class="changelog-wrap" data-lang="es">
+    <summary>Novedades en v1.4</summary>
+    <ul class="changelog-list">
+      <li>La puerta mantiene su tamaño al rotar</li>
+      <li>Seleccionar pared ya no activa los puntos de captura de todo el proyecto</li>
+      <li>Ctrl+Z tras arrastrar un objeto funciona a la primera</li>
+      <li>La plantilla PDF importada se conserva al guardar el archivo</li>
+      <li>Al borrar la plantilla, los objetos permanecen en su posición</li>
+      <li>Undo/redo funcionan correctamente con la plantilla PDF</li>
+      <li>Puerta e inodoro sin fondo blanco; lavabo e inodoro en color blanco</li>
+      <li>Exportación PDF correcta con y sin plantilla</li>
+    </ul>
+  </details>
+
+  <details class="changelog-wrap" data-lang="en">
+    <summary>What's new in v1.4</summary>
+    <ul class="changelog-list">
+      <li>Door keeps its size when rotated</li>
+      <li>Selecting a wall no longer activates snap points across the whole project</li>
+      <li>Ctrl+Z after dragging an object works on the first try</li>
+      <li>Imported PDF template is preserved when saving the file</li>
+      <li>Deleting the template leaves objects in their position</li>
+      <li>Undo/redo work correctly with the imported PDF template</li>
+      <li>Door and toilet no longer have a white background; sink and toilet now show in white</li>
+      <li>PDF export correct with and without template</li>
+    </ul>
+  </details>
 </section>
 
 <footer>
